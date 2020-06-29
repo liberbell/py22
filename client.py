@@ -18,6 +18,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 		# 	print('No messages from the server. Closing the connection...')
 		# 	break
 
+		product_object = pickle.loads(msg)
+
 		custom_file.write(data)
 		print('Batch of data written to file...')
 
