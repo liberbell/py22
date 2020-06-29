@@ -19,12 +19,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print('Connection to', address, 'established\n')
     print('Client object:', client, '\n')
 
-    custom_file = open('server_files/meditations.txt','rb')
+    for product in custom_object:
+            pickled_object = pickle.dump(product)
+            client.send(pickled_object)
 
-    custom_data = custom_file.read(40960)
+#     custom_file = open('server_files/meditations.txt','rb')
 
-    while (custom_data):
-            client.send(custom_data)
-            custom_data = custom_file.read(40960)
+#     custom_data = custom_file.read(40960)
+
+#     while (custom_data):
+#             client.send(custom_data)
+#             custom_data = custom_file.read(40960)
     
-    print('Custom File succesfully Sent')
+#     print('Custom File succesfully Sent')
