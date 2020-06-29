@@ -23,5 +23,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 		print('Product ID:', product_object.pid)
 		print('Product name:', product_object.name)
 		print('product price:'., product_object.price, '\n\n')
-
+		
 	custom_file.close()
