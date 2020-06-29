@@ -1,5 +1,7 @@
 import socket
-
+from product import Product
+import pickle
+import time
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
