@@ -13,6 +13,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                      Product('P027', 'Mouse', 15),
                      Product('P028', 'USBCable', 2)]
     s.listen(5)
+    
     print('Server is up. Listening for connections...\n')
     
     client, address = s.accept()
