@@ -8,7 +8,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((socket.gethostname(),4571))
 
     custom_object = [Product('P024', 'Torch', 13),
-                     Product('P025', 'WaterBottle', 5)]
+                     Product('P025', 'WaterBottle', 5),
+                     Product('P026', 'KeyBoard', 20),
+                     Product('P027', 'Mouse', 15),
+                     Product('P028', 'USBCable', 2)]
     s.listen(5)
     print('Server is up. Listening for connections...\n')
     
