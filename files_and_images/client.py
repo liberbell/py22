@@ -12,3 +12,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as r:
         
         custom_file.write(data)
         print("Batch of data written to file....")
+        
+    custom_file.Close()
