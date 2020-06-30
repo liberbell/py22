@@ -11,3 +11,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object:", client, "\n")
 
     custom_file = open("server_files/meditaiions.txt", "rb")
+    custom_data = custom_file.read(40960)
