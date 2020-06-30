@@ -1,7 +1,7 @@
 import socket
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((socket.gethostname(), 4571))
+    s.bind((localhost, 4571))
     s.listen(5)
 
     print('Server is up. Listening for connections....\n')
