@@ -1,4 +1,5 @@
 import socket
+from PIL import Image
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind(("localhost", 4571))
