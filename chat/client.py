@@ -14,3 +14,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         message_recv = sock.recv(1024)
         message_recv = message_recv.decode()
         print(server_name, " - ", message_recv)
+
+        send_message = input(client_name + "-")
+        sock.send(send_message.encode())
