@@ -10,3 +10,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     client, address = sock.accept()
     print("Connection to ", address, " established\n")
     print("Client object: ", client, "\n")
+
+    client_name_raw = client.recv(1024)
+    client_name = client_name_raw.decode()
+    print("Client %s has initiated a connection." %client_name)
