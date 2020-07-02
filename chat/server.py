@@ -23,3 +23,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 
         if send_message.lower() == "bye":
             break
+
+        message_recv = client.recv(1024)
+        message_recv = message_recv.decode()
+        print(client_name, " - ", message_recv)
