@@ -11,7 +11,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as r:
                 print("No messages from the server. Closing the connection....")
                 break
             
-            custom_file.write(data)
+            image_file.write(data)
             print("Batch of data written to file....")
             
-        custom_file.close()
+        image_file.close()
