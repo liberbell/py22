@@ -20,3 +20,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     while True:
         send_message = input(server_name + ' - ')
         client.send(send_message.encode())
+
+        if send_message.lower() == "bye":
+            break
