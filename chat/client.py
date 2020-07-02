@@ -17,3 +17,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 
         send_message = input(client_name + "-")
         sock.send(send_message.encode())
+
+        if send_message.lower == "bye":
+            break
