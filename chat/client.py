@@ -8,7 +8,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 
     server_name_raw = sock.recv(1024)
     server_name = server_name_raw.decode()
-    print("You have connected to the server %s", %server_name)
+    print("You have connected to the server %s" %server_name)
 
     while Ture:
         message_recv = sock.recv(1024)
