@@ -25,5 +25,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         while (image_batch):
             client.send(image_batch)
             image_batch = image_file.read(40960)
+            print("One batch sent to client...")
 
 print("Image sent successfully.")
