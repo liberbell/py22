@@ -14,3 +14,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     client_name_raw = client.recv(1024)
     client_name = client_name_raw.decode()
     print("Client %s has initiated a connection." %client_name)
+
+    client.send(server_name.encode())
+
+    while True:
+        send_message = input(server_name + ' - ')
+        client.send(send_message.encode())
