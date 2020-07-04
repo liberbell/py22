@@ -21,3 +21,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         data = client.recv(1024)
         total_received_size += len(data)
         i += 1
+    print("All data received in %i batches" %i)
+    client.close
