@@ -17,5 +17,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     i = 1
     while data:
-        print(data.decode())
+        print(data.decode("UTF-8"))
         data = client.recv(1024)
