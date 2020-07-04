@@ -23,3 +23,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         i += 1
     print("All data received in %i batches" %i)
     client.close
+end_time = datetime.now()
+print("Duration: ", end_time - start_time)
