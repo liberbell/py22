@@ -19,3 +19,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     while data:
         print(data.decode("UTF-8"))
         data = client.recv(1024)
+        total_received_size += len(data)
+        i += 1
