@@ -25,3 +25,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     client.close
 end_time = datetime.now()
 print("Duration: ", end_time - start_time)
+print("Size of data received: %i bytes." %total_received_size)
