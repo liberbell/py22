@@ -5,4 +5,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     sock.setblocking(True)
 
     data = bytes("Hello Server\n", "UTF-8") * 1024 * 1024 * 10
-    print("Size of data sent: %1 bytes." %len(data))
+    print("Size of data sent: %i bytes." %len(data))
