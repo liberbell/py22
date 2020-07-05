@@ -6,3 +6,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 
     data = bytes("Hello Server\n", "UTF-8") * 1024 * 1024 * 10
     print("Size of data sent: %i bytes." %len(data))
+
+    assert sock.send(data)
