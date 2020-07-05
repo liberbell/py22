@@ -6,3 +6,4 @@ feed = feedparser.parse("https://support.microsoft.com/app/content/api/content/f
 
 print(type(feed))
 # print(feed)
+print(feed.href)
