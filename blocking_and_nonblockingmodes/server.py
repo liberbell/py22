@@ -12,7 +12,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object: ", client, "\n")
 
     start_time = datetime.now()
-    data = client.recv(1024)
+    data = client.recv(10240)
     total_received_size = len(data)
 
     i = 1
