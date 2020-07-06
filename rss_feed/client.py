@@ -11,3 +11,6 @@ while True:
     print("###### Begin Feed ######\n\n")
     for post in feed.entries:
         print(post.title, ":\n", post.link, "\n\n")
+
+    print("###### End Feed ######\n\n")
+    time.sleep(30)
