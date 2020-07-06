@@ -8,5 +8,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
     i = 1
 
     while True:
-        message = bytes("Message #", + str(i), "UTF-8")
+        message = bytes("Message #" + str(i), "UTF-8")
         sock.sendto(message, ("localhost", 37020))
